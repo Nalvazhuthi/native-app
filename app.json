@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "app-developmentapp-development",
     "name": "app-development",
     "slug": "app-development",
     "version": "1.0.0",
@@ -24,6 +25,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
