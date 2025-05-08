@@ -1,31 +1,49 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text } from "react-native";
 import React from "react";
-import { Link } from "expo-router";
 
 const index = () => {
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Hellow </Text>
-      <Text style={styles.content}>I am Nannii... </Text>
-      <Link href={"/about"}>About</Link>
-      <Link href={"/contact"}>Contact</Link>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.title}>Hellow</Text>
+      <Text style={styles.content}>I am Nannii...</Text>
+    </SafeAreaView>
   );
 };
 
 export default index;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
   title: {
-    fontWeight: 700,
+    fontWeight: '700',
     fontSize: 32,
+    marginBottom: 10,
   },
   content: {
-    padding: 10,
+    fontSize: 16,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    marginBottom: 20,
   },
+  btn: {
+    flex: 1,
+    backgroundColor: 'gray',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 6,
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  pressed: {
+    backgroundColor: '#ccc',
+  }
 });
+
+
+
+
+
+
+
+
+//app
